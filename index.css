@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat&display=swap');
+:root {
+	--primary: rgb(172, 59, 97);
+	--primary-trans: rgb(172, 59, 97, 0.9);
+	--secondary: rgb(18, 60, 105);
+	--mid: rgb(107, 60, 101);
+	--dark: rgb(186, 178, 181);
+	--light: rgb(238, 226, 220);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--secondary);
+	line-height: 2.5em;
+	background-color: var(--light);
+}
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.5em;
+}
+
+.home-container {
+	text-align: center;
+}
+
+.intro-background {
+	background: url('./taj-mahal.jpg') rgba(255, 0, 150, 0.2);
+	background-size: cover;
+	background-blend-mode: hard-light;
+	min-height: 50vh;
+	padding: 1em;
+}
+
+.intro-container > * {
+	margin: 0.5em;
+}
+
+.intro-desc-container {
+	color: var(--light);
+	margin: 2em auto;
+	max-width: 860px;
+	padding: 1em;
+	background-color: var(--primary-trans);
+}
+
+.toc {
+	color: var(--light);
+	margin: 2em auto;
+	padding: 1em;
+	text-align: left;
+	background-color: var(--primary-trans);
+	max-width: 860px;
+}
+
+.toc a {
+	color: var(--light);
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+.toc a:hover {
+	color: var(--secondary);
+	font-weight: 700;
+}
+
+.main-content div {
+	padding: 1em;
+}
+
+.main-content p {
+	margin: 0 auto;
+	text-align: left;
+	max-width: 860px;
+}
+
+.dark-card {
+	background-color: rgb(186, 178, 181, 0.1);
+}
+
+.lesson-container {
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 860px;
+}
+
+.lesson-heading {
+	padding: 0.5em;
+	border-bottom: 0.1em solid black;
+}
+
+.lesson-card {
+	text-align: left;
+	height: 400px;
+	overflow: hidden;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.lesson-card img {
+	margin-top: 1em;
+	width: 100%;
+	float: left;
+	background-size: cover;
+}
