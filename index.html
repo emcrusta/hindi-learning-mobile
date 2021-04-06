@@ -6,9 +6,70 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mobile Mockup</title>
 		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./menu.css" />
 	</head>
 	<body>
-		<header class="header-container">Logo and Nav</header>
+		<header class="header-container">
+			<div class="menu-btn">
+				<span class="menu-btn-burger"></span>
+			</div>
+			<nav class="nav">
+				<ul class="menu-nav">
+					<li class="menu-nav-item active">
+						<a href="#" class="menu-nav-link">Home</a>
+					</li>
+					<li class="menu-nav-item">
+						<a href="#" class="menu-nav-link">About</a>
+					</li>
+					<li class="menu-nav-item" id="lessons-dropdown">
+						<a href="#" class="menu-nav-link">Lessons</a>
+						<ul class="dropdown">
+							<li>
+								<a href="#" class="dropdown-link"
+									>Introduction</a
+								>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link">Vowels</a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link">Consonants</a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link"
+									>Conversational</a
+								>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link">Beginner's</a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link"
+									>Intermediate</a
+								>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link">Numbers</a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link">Urdu</a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-link"
+									>All Lessons</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-nav-item">
+						<a href="#" class="menu-nav-link">Legal</a>
+					</li>
+					<li class="menu-nav-item">
+						<a href="#" class="menu-nav-link">Links</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<main class="home-container">
 			<div class="intro-background">
 				<div class="intro-container">
@@ -173,5 +234,6 @@
 			</div>
 		</main>
 		<footer></footer>
+		<script src="./index.js"></script>
 	</body>
 </html>
