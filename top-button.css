@@ -1,0 +1,20 @@
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 1em;
+	right: 2em;
+	z-index: 99;
+	border: solid var(--primary);
+	border-width: 0 0.8rem 0.8rem 0;
+	outline: none;
+	background-color: transparent;
+	color: var(--light);
+	cursor: pointer;
+	padding: 1em;
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+#topBtn:hover {
+	border-color: var(--mid);
+}

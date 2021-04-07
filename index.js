@@ -3,7 +3,7 @@ const hamburger = document.querySelector('.menu-btn-burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav-item');
-const dropdown = document.querySelector('#lessons-dropdown');
+const mybutton = document.getElementById('topBtn');
 
 let showMenu = false;
 
@@ -28,17 +28,22 @@ const toggleMenu = () => {
 
 menuBtn.addEventListener('click', toggleMenu);
 
-let showDropdown = false;
-
-const toggleDropdown = () => {
-	if (!showDropdown) {
-		dropdown.classList.add('dropdown-open');
-		showDropdown = true;
+const scrollFunction = () => {
+	if (
+		document.body.scrollTop > 500 ||
+		document.documentElement.scrollTop > 500
+	) {
+		mybutton.style.display = 'block';
 	} else {
-		dropdown.classList.remove('dropdown-open');
-		showDropdown = false;
+		mybutton.style.display = 'none';
 	}
-	console.log(showDropdown, dropdown.classList);
 };
 
-dropdown.addEventListener('click', toggleDropdown);
+const topFunction = () => {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+};
+
+window.onscroll = () => {
+	scrollFunction();
+};
