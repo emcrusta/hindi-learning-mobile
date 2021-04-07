@@ -45,7 +45,7 @@ a {
 }
 
 .intro-background {
-	background: url('./taj-mahal.jpg') rgba(255, 0, 150, 0.2);
+	background: url('../img/taj-mahal.jpg') rgba(255, 0, 150, 0.2);
 	background-size: cover;
 	background-blend-mode: hard-light;
 	min-height: 50vh;
@@ -123,6 +123,7 @@ a {
 
 footer {
 	width: 100%;
+	min-height: 50vh;
 	background: var(--primary-trans);
 	font-size: 1rem;
 	text-align: right;
