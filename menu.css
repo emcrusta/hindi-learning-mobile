@@ -10,7 +10,7 @@
 
 .menu-btn-burger {
 	position: absolute;
-	right: 0;
+	right: 1em;
 	top: 0.5em;
 	width: 33px;
 	height: 4px;
@@ -46,15 +46,15 @@
 }
 
 .menu-btn-burger.open::before {
-	transform: rotate(45deg) translate(0.3em, 0.5em);
+	transform: rotate(45deg) translate(0.25em, 0.5em);
 }
 
 .menu-btn-burger.open::after {
-	transform: rotate(-45deg) translate(0.3em, -0.5em);
+	transform: rotate(-45deg) translate(0.25em, -0.5em);
 }
 
 .nav {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -66,10 +66,30 @@
 	visibility: visible;
 }
 
+.intro-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 50%;
+	padding-left: 1em;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	visibility: visible;
+}
+
+.logo {
+	font-family: 'Kalam', cursive;
+}
+
 .menu-nav {
 	background: var(--light);
-	float: right;
-	width: 15.265em;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
 	padding: 2em;
 	list-style-type: none;
 	transform: translateY(-100%);
@@ -80,36 +100,61 @@
 }
 
 .menu-nav-item.active a {
-	color: var(--secondary);
+	color: var(--mid);
 }
 
 .menu-nav-link {
 	display: inline-block;
-	font-size: 1.2rem;
+	font-size: 2rem;
+	padding: 1em 0;
 	text-transform: uppercase;
-	padding: 0.5em 0;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 .menu-nav-link:hover {
-	color: var(--dark);
+	color: var(--primary);
 }
 
-.dropdown {
-	display: none;
-	list-style-type: none;
-	padding-left: 1em;
-	font-size: 1rem;
-}
+@media screen and (min-width: 760px) {
+	.menu-btn {
+		visibility: hidden;
+	}
 
-.dropdown-link {
-	display: inline-block;
-}
+	.nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0 auto;
+		max-width: 860px;
+		visibility: visible;
+	}
 
-.dropdown-link:hover {
-	color: var(--dark);
-}
+	.intro-title {
+		width: 40%;
+		padding-left: 1em;
+	}
 
-.dropdown.open {
-	display: block;
+	.menu-nav {
+		display: inline;
+		padding: 0;
+		float: right;
+		width: 60%;
+		background: transparent;
+		list-style-type: none;
+		overflow: hidden;
+		transform: translateY(0);
+	}
+
+	.menu-nav-link {
+		display: inline;
+		font-size: 1.5rem;
+		padding: 0;
+		float: left;
+		padding-right: 0.5em;
+		text-decoration: none;
+	}
+
+	.menu-nav li:hover {
+		color: var(--primary);
+	}
 }
