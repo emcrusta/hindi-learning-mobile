@@ -3,6 +3,7 @@
 	--primary: rgb(172, 59, 97);
 	--primary-trans: rgb(172, 59, 97, 0.9);
 	--secondary: rgb(18, 60, 105);
+	--secondary-trans: rgb(18, 60, 105, 0.9);
 	--mid: rgb(107, 60, 101);
 	--dark: rgb(186, 178, 181);
 	--light: rgb(238, 226, 220);
@@ -98,7 +99,7 @@ a {
 
 .lesson-heading {
 	padding: 0.5em;
-	border-bottom: 0.1em solid black;
+	border-bottom: 0.1em solid var(--secondary);
 }
 
 .lesson-card {
@@ -114,4 +115,13 @@ a {
 	width: 100%;
 	float: left;
 	background-size: cover;
+}
+
+footer {
+	width: 100%;
+	background: var(--secondary-trans);
+	font-size: 1rem;
+	text-align: right;
+	padding: 1rem;
+	color: var(--light);
 }
