@@ -1,5 +1,9 @@
 #topBtn {
-	display: none;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+	-webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 	position: fixed;
 	bottom: 1em;
 	right: 2em;

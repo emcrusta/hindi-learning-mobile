@@ -33,9 +33,14 @@ const scrollFunction = () => {
 		document.body.scrollTop > 500 ||
 		document.documentElement.scrollTop > 500
 	) {
-		mybutton.style.display = 'block';
+		mybutton.style.visibility = 'visible';
+		mybutton.style.opacity = '1';
+		mybutton.style.transitionDelay = '0s';
 	} else {
-		mybutton.style.display = 'none';
+		mybutton.style.visibility = 'hidden';
+		mybutton.style.opacity = '0';
+		mybutton.style.webkitTransition =
+			'visibility 0s linear 0.5s, opacity 0.5s linear';
 	}
 };
 
