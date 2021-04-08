@@ -81,7 +81,7 @@ a {
 	font-weight: 700;
 }
 
-.main-content div {
+.main-content .main-card {
 	padding: 2em;
 }
 
@@ -121,22 +121,24 @@ a {
 	background-size: cover;
 }
 
-footer {
+.main-footer {
 	width: 100%;
-	min-height: 50vh;
 	background: var(--primary-trans);
 	font-size: 1rem;
-	text-align: right;
-	padding: 1rem;
+	padding: 2.5em 5%;
 	color: var(--light);
 }
 
-.icon {
+.copyright {
 	float: left;
-	color: var(--light);
-	padding: 0.2em;
 }
 
-.icon:hover {
-	color: var(--mid);
+.design-credit {
+	float: left;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
 }

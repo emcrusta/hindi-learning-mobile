@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="./css/index.css" />
 		<link rel="stylesheet" href="./css/menu.css" />
 		<link rel="stylesheet" href="./css/top-button.css" />
+		<link href="./static/css/main.20efbc2f.chunk.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header class="header-container">
@@ -78,7 +79,7 @@
 				</div>
 			</div>
 			<div class="main-content">
-				<div class="light-card" id="sec-one">
+				<div class="main-card" id="sec-one">
 					<h3>An Introduction to Hindi</h3>
 					<p>
 						So do you think you are ready to begin your adventure in
@@ -92,7 +93,7 @@
 						be learning.
 					</p>
 				</div>
-				<div class="dark-card" id="sec-two">
+				<div class="dark-card main-card" id="sec-two">
 					<h3>Lesson #1: Saying Hello</h3>
 					<p>
 						So let’s get straight to it and learn our first Hindi
@@ -102,7 +103,7 @@
 						Hindi…
 					</p>
 				</div>
-				<div class="light-card" id="sec-three">
+				<div class="main-card" id="sec-three">
 					<h3>Intro #1: About Hindi</h3>
 					<p>
 						And because I’m feeling rather nice and kind I’m going
@@ -111,7 +112,7 @@
 						learning any language in fact!)
 					</p>
 				</div>
-				<div class="dark-card" id="sec-four">
+				<div class="dark-card main-card" id="sec-four">
 					<h3>Some Helpful Ideas</h3>
 					<p>
 						Learning a language may seem very scary, but don’t
@@ -120,11 +121,15 @@
 						you may have noticed that Hindi is written in a very
 						strange looking alphabet, this is known as Devanagari.
 						I’m going to introduce some of the main concept to you
-						here;
+						here:
 					</p>
 				</div>
-				<div class="light-card" id="sec-five">
-					<h3>Devanagari - The Hindi Alphabet!</h3>
+				<div class="dark-card">
+					<h3>Try Our Devanagari Flashcard Game!</h3>
+					<div id="flashcard_container"></div>
+				</div>
+
+				<div class="main-card" id="sec-five">
 					<p>
 						And thats the Introduction finished! That wasn’t so bad
 						was it? Well I sure hope not because we still have so
@@ -132,7 +137,7 @@
 						into several main sections;
 					</p>
 				</div>
-				<div class="dark-card" id="sec-six">
+				<div class="main-card" id="sec-six">
 					<h3>Hindi Vowels Hindi Consonants</h3>
 					<p>
 						Just like English, Hindi is made of Vowels and
@@ -145,7 +150,7 @@
 						important thing! So visit…
 					</p>
 				</div>
-				<div class="light-card" id="sec-seven">
+				<div class="dark-card main-card" id="sec-seven">
 					<h3>Conversational Phrases!</h3>
 					<p>
 						Understanding grammar rules is the foundation to
@@ -153,7 +158,7 @@
 						boring! So check out…
 					</p>
 				</div>
-				<div class="dark-card" id="sec-eight">
+				<div class="main-card" id="sec-eight">
 					<h3>Beginners Grammar</h3>
 					<p>
 						Was that all too easy? Do you want something more
@@ -173,7 +178,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="lesson-container">
+			<div class="dark-card lesson-container">
 				<h1 class="lesson-heading" id="sec-nine">Hindi Lessons</h1>
 				<a href="#">
 					<div class="lesson-card">
@@ -214,7 +219,7 @@
 				<a href="#">View All Lessons</a>
 			</div>
 		</main>
-		<footer>
+		<footer class="main-footer clearfix">
 			<div class="social-media">
 				<a href="george.learninghindi@gmail.com">
 					<i class="fas fa-envelope fa-2x icon"></i>
@@ -226,15 +231,131 @@
 					<i class="fab fa-soundcloud fa-2x icon"></i>
 				</a>
 			</div>
-			<div class="license">
+			<p class="license">
 				The contents of this website are, unless otherwise mentioned,
 				licenced under a CC-BY-NC 3.0 unported licence.
-			</div>
+			</p>
+			<p class="copyright">
+				All content from
+				<a href="https://www.learning-hindi.com/">Learning-Hindi.com</a>
+				&copy; 2021
+			</p>
+			<p class="design-credit">Site design by Eileen Crusta</p>
+			<ul class="footer-nav"></ul>
 		</footer>
+		<script src="./js/index.js"></script>
 		<script
 			src="https://kit.fontawesome.com/192e4ed1c4.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="./js/index.js"></script>
+		<script>
+			!(function (e) {
+				function r(r) {
+					for (
+						var n, l, a = r[0], f = r[1], i = r[2], p = 0, s = [];
+						p < a.length;
+						p++
+					)
+						(l = a[p]),
+							Object.prototype.hasOwnProperty.call(o, l) &&
+								o[l] &&
+								s.push(o[l][0]),
+							(o[l] = 0);
+					for (n in f)
+						Object.prototype.hasOwnProperty.call(f, n) &&
+							(e[n] = f[n]);
+					for (c && c(r); s.length; ) s.shift()();
+					return u.push.apply(u, i || []), t();
+				}
+				function t() {
+					for (var e, r = 0; r < u.length; r++) {
+						for (var t = u[r], n = !0, a = 1; a < t.length; a++) {
+							var f = t[a];
+							0 !== o[f] && (n = !1);
+						}
+						n && (u.splice(r--, 1), (e = l((l.s = t[0]))));
+					}
+					return e;
+				}
+				var n = {},
+					o = { 1: 0 },
+					u = [];
+				function l(r) {
+					if (n[r]) return n[r].exports;
+					var t = (n[r] = { i: r, l: !1, exports: {} });
+					return (
+						e[r].call(t.exports, t, t.exports, l),
+						(t.l = !0),
+						t.exports
+					);
+				}
+				(l.m = e),
+					(l.c = n),
+					(l.d = function (e, r, t) {
+						l.o(e, r) ||
+							Object.defineProperty(e, r, {
+								enumerable: !0,
+								get: t
+							});
+					}),
+					(l.r = function (e) {
+						'undefined' != typeof Symbol &&
+							Symbol.toStringTag &&
+							Object.defineProperty(e, Symbol.toStringTag, {
+								value: 'Module'
+							}),
+							Object.defineProperty(e, '__esModule', {
+								value: !0
+							});
+					}),
+					(l.t = function (e, r) {
+						if ((1 & r && (e = l(e)), 8 & r)) return e;
+						if (4 & r && 'object' == typeof e && e && e.__esModule)
+							return e;
+						var t = Object.create(null);
+						if (
+							(l.r(t),
+							Object.defineProperty(t, 'default', {
+								enumerable: !0,
+								value: e
+							}),
+							2 & r && 'string' != typeof e)
+						)
+							for (var n in e)
+								l.d(
+									t,
+									n,
+									function (r) {
+										return e[r];
+									}.bind(null, n)
+								);
+						return t;
+					}),
+					(l.n = function (e) {
+						var r =
+							e && e.__esModule
+								? function () {
+										return e.default;
+								  }
+								: function () {
+										return e;
+								  };
+						return l.d(r, 'a', r), r;
+					}),
+					(l.o = function (e, r) {
+						return Object.prototype.hasOwnProperty.call(e, r);
+					}),
+					(l.p = './');
+				var a = (this.webpackJsonpflashcards =
+						this.webpackJsonpflashcards || []),
+					f = a.push.bind(a);
+				(a.push = r), (a = a.slice());
+				for (var i = 0; i < a.length; i++) r(a[i]);
+				var c = f;
+				t();
+			})([]);
+		</script>
+		<script src="./static/js/2.8b18e227.chunk.js"></script>
+		<script src="./static/js/main.f41c7952.chunk.js"></script>
 	</body>
 </html>

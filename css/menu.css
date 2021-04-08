@@ -78,10 +78,6 @@
 	visibility: visible;
 }
 
-.logo {
-	font-family: 'Kalam', cursive;
-}
-
 .menu-nav {
 	background: var(--light);
 	display: flex;

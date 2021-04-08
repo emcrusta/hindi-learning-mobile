@@ -9,6 +9,7 @@
 	right: 2em;
 	z-index: 99;
 	border: solid var(--secondary);
+	border-radius: 0;
 	border-width: 0 0.8rem 0.8rem 0;
 	outline: none;
 	background-color: transparent;
