@@ -121,24 +121,103 @@ a {
 	background-size: cover;
 }
 
-.main-footer {
-	width: 100%;
-	background: var(--primary-trans);
+.site-footer {
+	background-color: var(--primary);
+	padding: 2.5em 2em 1em;
 	font-size: 1rem;
-	padding: 2.5em 5%;
+	color: var(--light);
+	line-height: 2rem;
+}
+.site-footer hr {
+	border-top-color: var(--light);
+	opacity: 0.5;
+	margin: 1em 0;
+}
+
+.site-footer h6 {
+	color: var(--dark);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin-top: 0.3rem;
+	letter-spacing: 0.2em;
+}
+.site-footer a {
 	color: var(--light);
 }
-
-.copyright {
-	float: left;
+.site-footer a:hover {
+	color: var(--mid);
+	text-decoration: none;
+}
+.footer-links {
+	padding-left: 0;
+	list-style: none;
+}
+.footer-links li {
+	display: block;
 }
 
-.design-credit {
-	float: left;
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+	color: var(--mid);
+	text-decoration: none;
 }
 
-.clearfix::after {
-	content: '';
-	clear: both;
-	display: table;
+.site-footer .social-icons {
+	text-align: right;
+}
+
+.site-footer .social-icons li {
+	text-align: center;
+}
+
+.site-footer .social-icons a {
+	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin-left: 0.5em;
+	margin-right: 0;
+	border-radius: 100%;
+	background-color: var(--light);
+}
+
+@media (max-width: 991px) {
+	.site-footer [class^='col-'] {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 767px) {
+	.site-footer {
+		padding-bottom: 0;
+	}
+	.site-footer .copyright-text,
+	.design-credit,
+	.site-footer .social-icons {
+		text-align: center;
+	}
+}
+.social-icons {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	float: 0;
+}
+.social-icons li {
+	display: inline-block;
+	margin-bottom: 0.25em;
+}
+
+.social-icons a {
+	color: var(--mid);
+	font-size: 1rem;
+	display: inline-block;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+	color: var(--light);
+	background-color: var(--mid);
 }
