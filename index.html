@@ -6,18 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mobile Mockup</title>
 		<link rel="stylesheet" href="./css/bootstrap.min.css" />
-		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/menu.css" />
 		<link rel="stylesheet" href="./css/top-button.css" />
 		<link href="./static/css/main.20efbc2f.chunk.css" rel="stylesheet" />
 	</head>
 	<body>
-		<header class="header-container">
+		<header>
+			<div class="intro-background header">
+				<div class="container">
 			<div class="menu-btn">
 				<span class="menu-btn-burger"></span>
 			</div>
 			<nav class="nav">
-				<h1 class="intro-title">Learning Hindi</h1>
 				<ul class="menu-nav">
 					<li class="menu-nav-item active">
 						<a href="#" class="menu-nav-link">Home</a>
@@ -36,13 +37,8 @@
 					</li>
 				</ul>
 			</nav>
-		</header>
-		<button onclick="topFunction()" id="topBtn" title="Go to top"></button>
-		<main class="home-container">
-			<div class="intro-background">
-				<div class="intro-container">
 					<div class="intro-desc-container">
-						<h2 class="intro-desc">
+						<h1 class="intro-desc">
 							नमस्ते Namaste and welcome to Learning Hindi!
 						</h2>
 						We teach the beautiful language of Hindi in short, easy
@@ -53,133 +49,138 @@
 						<h3 class="toc-title">
 							Jump to a Section in Our Introduction
 						</h3>
-						<ol class="toc-contents">
-							<a href="#sec-one"
-								><li>An Introduction to Hindi</li></a
-							>
-							<a href="#sec-two"
-								><li>Lesson #1: Saying Hello</li></a
-							>
-							<a href="#sec-three"
-								><li>Intro #1: About Hindi</li></a
-							>
+						<ol>
+							<a href="#sec-one"><li>An Introduction to Hindi</li></a>
+							<a href="#sec-two"><li>Lesson #1: Saying Hello</li></a>
+							<a href="#sec-three"><li>Intro #1: About Hindi</li></a>
 							<a href="#sec-four"><li>Some Helpful Ideas</li></a>
-							<a href="#sec-five"
-								><li>Devanagari - The Hindi Alphabet!</li></a
-							>
-							<a href="#sec-six"
-								><li>Hindi Vowels & Hindi Consonants</li></a
-							>
-							<a href="#sec-seven"
-								><li>Conversational Phrases!</li></a
-							>
+							<a href="#sec-five"><li>Devanagari - The Hindi Alphabet!</li></a>
+							<a href="#sec-six"><li>Hindi Vowels & Hindi Consonants</li></a>
+							<a href="#sec-seven"><li>Conversational Phrases!</li></a>
 							<a href="#sec-eight"><li>Beginners Grammar</li></a>
 							<a href="#sec-nine"><li>Lessons</li></a>
 						</ol>
+
 					</div>
 				</div>
 			</div>
+		</header>
+		<button onclick="topFunction()" id="topBtn" title="Go to top"></button>
+		<main class="">
 			<div class="main-content">
-				<div class="main-card" id="sec-one">
-					<h3>An Introduction to Hindi</h3>
-					<p>
-						So do you think you are ready to begin your adventure in
-						Learning Hindi? Excellent! Remember that although
-						learning a language fluently may take years, it is only
-						ever one small step at a time. The Indian flag - Hindi
-						is mainly spoken in the northern areas of India. On this
-						page you’ll find the background information about Hindi
-						simply to give you more of an idea about what Hindi
-						really is and to let you know some of the things you’ll
-						be learning.
-					</p>
+				<div class="content-card" id="sec-one">
+					<div class="container card-text">
+						<h3>An Introduction to Hindi</h3>
+						<p>
+							So do you think you are ready to begin your adventure in
+							Learning Hindi? Excellent! Remember that although
+							learning a language fluently may take years, it is only
+							ever one small step at a time. The Indian flag - Hindi
+							is mainly spoken in the northern areas of India. On this
+							page you’ll find the background information about Hindi
+							simply to give you more of an idea about what Hindi
+							really is and to let you know some of the things you’ll
+							be learning.
+						</p>
+					</div>
 				</div>
-				<div class="dark-card main-card" id="sec-two">
-					<h3>Lesson #1: Saying Hello</h3>
-					<p>
-						So let’s get straight to it and learn our first Hindi
-						word, नमस्ते namaste - Hello. Click the link above to go
-						to Lesson #1. Think you can remember that? Excellent!
-						Now we’re going to learn some really simple facts about
-						Hindi…
-					</p>
+				<div class="content-card dark" id="sec-two">
+					<div class="container card-text">
+						<h3>Lesson #1: Saying Hello</h3>
+						<p>
+							So let’s get straight to it and learn our first Hindi
+							word, नमस्ते namaste - Hello. Click the link above to go
+							to Lesson #1. Think you can remember that? Excellent!
+							Now we’re going to learn some really simple facts about
+							Hindi…
+						</p>
+					</div>
 				</div>
-				<div class="main-card" id="sec-three">
-					<h3>Intro #1: About Hindi</h3>
-					<p>
-						And because I’m feeling rather nice and kind I’m going
-						to give you a whole bunch of hints and tips to help you
-						learn Hindi. (These hints and helpers can be applied to
-						learning any language in fact!)
-					</p>
+				<div class="content-card" id="sec-three">
+					<div class="container card-text">
+						<h3>Intro #1: About Hindi</h3>
+						<p>
+							And because I’m feeling rather nice and kind I’m going
+							to give you a whole bunch of hints and tips to help you
+							learn Hindi. (These hints and helpers can be applied to
+							learning any language in fact!)
+						</p>
+					</div>
 				</div>
-				<div class="dark-card main-card" id="sec-four">
-					<h3>Some Helpful Ideas</h3>
-					<p>
-						Learning a language may seem very scary, but don’t
-						worry, I will make it and as simple, as easy and, most
-						importantly, as fun as possible. Got that? Great! Now,
-						you may have noticed that Hindi is written in a very
-						strange looking alphabet, this is known as Devanagari.
-						I’m going to introduce some of the main concept to you
-						here:
-					</p>
+				<div class="content-card dark" id="sec-four">
+					<div class="container card-text">
+						<h3>Some Helpful Ideas</h3>
+						<p>
+							Learning a language may seem very scary, but don’t
+							worry, I will make it and as simple, as easy and, most
+							importantly, as fun as possible. Got that? Great! Now,
+							you may have noticed that Hindi is written in a very
+							strange looking alphabet, this is known as Devanagari.
+							I’m going to introduce some of the main concept to you
+							here:
+						</p>
+					</div>
 				</div>
-				<div class="dark-card">
-					<h3>Try Our Devanagari Flashcard Game!</h3>
-					<div id="flashcard_container"></div>
+				<div class="content-card" id="sec-five">
+					<div class="container card-text">
+						<h3>Try Our Devanagari Flashcard Game!</h3>
+						<div id="flashcard_container"></div>
+						<p>
+							And thats the Introduction finished! That wasn’t so bad
+							was it? Well I sure hope not because we still have so
+							much to learn! From here the blog then gets divided up
+							into several main sections;
+						</p>
+					</div>
 				</div>
-
-				<div class="main-card" id="sec-five">
-					<p>
-						And thats the Introduction finished! That wasn’t so bad
-						was it? Well I sure hope not because we still have so
-						much to learn! From here the blog then gets divided up
-						into several main sections;
-					</p>
+				<div class="content-card dark" id="sec-six">
+					<div class="container card-text">
+						<h3>Hindi Vowels Hindi Consonants</h3>
+						<p>
+							Just like English, Hindi is made of Vowels and
+							Consonants. Here each letter is introduced and explained
+							with plenty of example words! Now that you’ve learnt all
+							the letters in Hindi it’s time to start learning real
+							Conversational Phrases and Grammar Rules! Try reading
+							one lesson from each topic at a time! Actually being
+							able to have a conversation in Hindi is the most
+							important thing! So visit…
+						</p>
+					</div>
 				</div>
-				<div class="main-card" id="sec-six">
-					<h3>Hindi Vowels Hindi Consonants</h3>
-					<p>
-						Just like English, Hindi is made of Vowels and
-						Consonants. Here each letter is introduced and explained
-						with plenty of example words! Now that you’ve learnt all
-						the letters in Hindi it’s time to start learning real
-						Conversational Phrases and Grammar Rules! Try reading
-						one lesson from each topic at a time! Actually being
-						able to have a conversation in Hindi is the most
-						important thing! So visit…
-					</p>
+				<div class="content-card" id="sec-seven">
+					<div class="container card-text">
+						<h3>Conversational Phrases!</h3>
+						<p>
+							Understanding grammar rules is the foundation to
+							understanding the language! Don’t worry though, it’s not
+							boring! So check out…
+						</p>
+					</div>
 				</div>
-				<div class="dark-card main-card" id="sec-seven">
-					<h3>Conversational Phrases!</h3>
-					<p>
-						Understanding grammar rules is the foundation to
-						understanding the language! Don’t worry though, it’s not
-						boring! So check out…
-					</p>
-				</div>
-				<div class="main-card" id="sec-eight">
-					<h3>Beginners Grammar</h3>
-					<p>
-						Was that all too easy? Do you want something more
-						challenging and more difficult? Have a look at the
-						Intermediate Grammar section for more advance Hindi
-						Grammar lessons! Finally these following lessons are
-						really useful for everyone but they don’t seem to ‘fit’
-						well into any particular section; The Urdu Section How
-						to Type in Hindi Using Bollywood to help you Learn! The
-						International Phonetic Alphabet and Hindi Now if you’ve
-						got all the way to the bottom of this page then you
-						haven’t clicked on anything, Why not?! So go to a lesson
-						section now and get learning! If you don’t know where to
-						go then Click here for a Random Lesson! If you want to
-						get in touch with me then all the ways you can are
-						listed here.
-					</p>
+				<div class="content-card dark" id="sec-eight">
+					<div class="container card-text">
+						<h3>Beginners Grammar</h3>
+						<p>
+							Was that all too easy? Do you want something more
+							challenging and more difficult? Have a look at the
+							Intermediate Grammar section for more advance Hindi
+							Grammar lessons! Finally these following lessons are
+							really useful for everyone but they don’t seem to ‘fit’
+							well into any particular section; The Urdu Section How
+							to Type in Hindi Using Bollywood to help you Learn! The
+							International Phonetic Alphabet and Hindi Now if you’ve
+							got all the way to the bottom of this page then you
+							haven’t clicked on anything, Why not?! So go to a lesson
+							section now and get learning! If you don’t know where to
+							go then Click here for a Random Lesson! If you want to
+							get in touch with me then all the ways you can are
+							listed here.
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="dark-card lesson-container">
+			<div class="lesson-container">
 				<h1 class="lesson-heading" id="sec-nine">Hindi Lessons</h1>
 				<a href="#">
 					<div class="lesson-card">
@@ -236,6 +237,7 @@
 							lessons from complete beginners to an intermediate
 							level.
 						</p>
+						<br/>
 						<p class="text-justify">
 							This version of Learning-Hindi.com is hosted by
 							GitHub and is a mobile redesign of the original

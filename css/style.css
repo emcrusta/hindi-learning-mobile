@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@400;500;700&display=swap');
 :root {
 	--primary: rgb(172, 59, 97);
 	--primary-trans: rgb(172, 59, 97, 0.9);
@@ -9,7 +9,9 @@
 	--light: rgb(238, 226, 220);
 }
 
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 }
@@ -23,6 +25,12 @@ body {
 	color: var(--secondary);
 	line-height: 2.5em;
 	background-color: var(--light);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 500;
 }
 
 h1 {
@@ -40,8 +48,13 @@ a {
 	color: var(--secondary);
 }
 
-.home-container {
-	text-align: center;
+.container {
+	margin: 0 auto;
+	max-width: 860px;
+}
+
+.header {
+	padding: 1em;
 }
 
 .intro-background {
@@ -49,25 +62,21 @@ a {
 	background-size: cover;
 	background-blend-mode: hard-light;
 	min-height: 50vh;
-	padding: 2em;
-	padding-top: 3em;
 }
 
 .intro-desc-container {
+	text-align: center;
 	color: var(--light);
-	margin: 2em auto;
-	max-width: 860px;
+	margin: 2em 0;
 	padding: 1em;
 	background-color: var(--primary-trans);
 }
 
 .toc {
 	color: var(--light);
-	margin: 2em auto;
+	margin: 2em 0;
 	padding: 1em;
-	text-align: left;
 	background-color: var(--primary-trans);
-	max-width: 860px;
 }
 
 .toc a {
@@ -78,21 +87,19 @@ a {
 
 .toc a:hover {
 	color: var(--secondary);
-	font-weight: 700;
+	font-weight: 500;
 }
 
-.main-content .main-card {
-	padding: 2em;
+.content-card {
+	padding: 1em 0;
 }
 
-.main-content p {
-	margin: 0 auto;
-	text-align: left;
-	max-width: 860px;
-}
-
-.dark-card {
+.dark {
 	background-color: rgb(186, 178, 181, 0.1);
+}
+
+.card-text {
+	padding: 0 1em;
 }
 
 .lesson-container {
