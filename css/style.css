@@ -48,9 +48,25 @@ a {
 	color: var(--secondary);
 }
 
+a:hover {
+	color: var(--primary);
+}
+
+p a {
+	color: var(--primary);
+}
+
+p a:hover {
+	color: var(--mid);
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 860px;
+}
+
+.row {
+	display: flex;
 }
 
 .header {
@@ -99,33 +115,88 @@ a {
 }
 
 .card-text {
-	padding: 0 1em;
+	padding: 0 2em;
 }
 
 .lesson-container {
-	margin: 0 auto;
-	padding: 1em;
-	max-width: 860px;
+	padding: 2em;
 }
 
 .lesson-heading {
-	padding: 0.5em;
-	border-bottom: 0.1em solid var(--secondary);
-}
-
-.lesson-card {
-	text-align: left;
-	height: 400px;
-	overflow: hidden;
-	padding: 1em;
+	margin: 0 auto;
 	margin-bottom: 1em;
+	width: 100%;
+	justify-content: space-between;
 }
 
-.lesson-card img {
-	margin-top: 1em;
+.lesson-heading > h2,
+.lesson-heading > a {
 	width: 100%;
-	float: left;
-	background-size: cover;
+}
+
+.lesson-heading > a {
+	font-weight: 600;
+	text-align: right;
+}
+
+.lesson-cards {
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+}
+
+.lesson-cards li {
+	list-style: none;
+	background-color: rgb(252, 252, 252, 0.3);
+	border-radius: 0.5rem;
+}
+
+.lesson-cards li > figure {
+	max-height: 220px;
+	overflow: hidden;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	position: relative;
+}
+
+.lesson-cards li > figure > img {
+	width: 100%;
+}
+
+.lesson-cards li > figure > figcaption {
+	position: absolute;
+	bottom: 0;
+	background-color: var(--secondary-trans);
+	width: 100%;
+}
+
+.lesson-cards li > figure > figcaption > h3 {
+	color: var(--light);
+	padding: 0.75rem;
+	font-size: 1.25rem;
+}
+
+.lesson-cards li > p {
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 1rem 0.75rem;
+}
+
+.lesson-cards li > a {
+	background-color: var(--secondary);
+	border-radius: 0.25rem;
+	text-align: center;
+	display: inline-block;
+	padding: 0.2rem 1rem;
+	margin: 0.5rem;
+	font-weight: 500;
+	color: var(--light);
+}
+
+.lesson-cards li > a:hover {
+	background-color: var(--primary);
+	color: var(--light);
 }
 
 .site-footer {
@@ -196,6 +267,9 @@ a {
 
 .site-footer [class^='col-'] {
 	margin-bottom: 30px;
+}
+
+@media (min-width: 600px) {
 }
 
 @media (max-width: 767px) {
