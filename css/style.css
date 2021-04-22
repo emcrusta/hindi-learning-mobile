@@ -73,7 +73,7 @@ p a:hover {
 
 .content-container {
 	margin: 0 auto;
-	max-width: 860px;
+	max-width: 1000px;
 }
 
 .header {
@@ -149,13 +149,13 @@ p a:hover {
 
 .lesson-cards {
 	padding: 0;
+	list-style-type: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 1rem;
 }
 
 .lesson-cards li {
-	list-style: none;
 	background-color: rgb(252, 252, 252, 0.3);
 	border-radius: 0.5rem;
 }
@@ -275,6 +275,12 @@ p a:hover {
 
 .site-footer [class^='col-'] {
 	margin-bottom: 30px;
+}
+
+@media (max-width: 350px) {
+	.lesson-cards {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
 }
 
 @media (max-width: 767px) {
