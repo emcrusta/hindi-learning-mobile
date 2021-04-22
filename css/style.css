@@ -16,6 +16,17 @@
 	margin: 0;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -60,13 +71,9 @@ p a:hover {
 	color: var(--mid);
 }
 
-.container {
+.content-container {
 	margin: 0 auto;
 	max-width: 860px;
-}
-
-.row {
-	display: flex;
 }
 
 .header {
@@ -123,10 +130,11 @@ p a:hover {
 }
 
 .lesson-heading {
+	display: flex;
+	justify-content: space-between;
 	margin: 0 auto;
 	margin-bottom: 1em;
 	width: 100%;
-	justify-content: space-between;
 }
 
 .lesson-heading > h2,
@@ -267,9 +275,6 @@ p a:hover {
 
 .site-footer [class^='col-'] {
 	margin-bottom: 30px;
-}
-
-@media (min-width: 600px) {
 }
 
 @media (max-width: 767px) {
