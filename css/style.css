@@ -277,7 +277,7 @@ p a:hover {
 	margin-bottom: 30px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 384px) {
 	.lesson-cards {
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
