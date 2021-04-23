@@ -1,3 +1,4 @@
+const html = document.documentElement;
 const menuBtn = document.querySelector('.menu-btn');
 const hamburger = document.querySelector('.menu-btn-burger');
 const nav = document.querySelector('.nav');
@@ -7,23 +8,49 @@ const mybutton = document.getElementById('topBtn');
 
 let showMenu = false;
 
+function closeMenuOnBodyClick(event) {
+	const path = event.composedPath();
+	const navObj = {
+		'menu-btn': 0,
+		'menu-btn-burger': 0,
+		'menu-nav': 0,
+		'menu-nav-link': 0
+	};
+	if (path.some(elem => navObj[elem.className] !== undefined)) {
+		console.log('hello world');
+		return;
+	}
+	closeMenu();
+}
+
+function openMenu() {
+	hamburger.classList.add('open');
+	nav.classList.add('open');
+	menuNav.classList.add('open');
+	navItems.forEach(item => item.classList.add('open'));
+
+	showMenu = true;
+
+	html.addEventListener('click', closeMenuOnBodyClick);
+}
+
+function closeMenu() {
+	hamburger.classList.remove('open');
+	nav.classList.remove('open');
+	menuNav.classList.remove('open');
+	navItems.forEach(item => item.classList.remove('open'));
+
+	showMenu = false;
+
+	html.removeEventListener('click', closeMenuOnBodyClick);
+}
+
 const toggleMenu = () => {
 	if (!showMenu) {
-		hamburger.classList.add('open');
-		nav.classList.add('open');
-		menuNav.classList.add('open');
-		navItems.forEach(item => item.classList.add('open'));
-
-		showMenu = true;
+		openMenu();
 	} else {
-		hamburger.classList.remove('open');
-		nav.classList.remove('open');
-		menuNav.classList.remove('open');
-		navItems.forEach(item => item.classList.remove('open'));
-
-		showMenu = false;
+		closeMenu();
 	}
-	console.log(showMenu, hamburger.classList);
 };
 
 menuBtn.addEventListener('click', toggleMenu);
